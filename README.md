@@ -1,4 +1,3 @@
-# Arithmetic-operation-using-8086
 # 8086 Assembly Language Programs for Arithmetic Operations
 
 ## AIM
@@ -66,6 +65,10 @@ END
 ---
 
 ## OUTPUT IMAGE FROM MASM SOFTWARE
+<img width="640" height="401" alt="image" src="https://github.com/user-attachments/assets/898b3d94-3ff8-4370-b73f-2ed871766f04" />
+<img width="641" height="400" alt="image" src="https://github.com/user-attachments/assets/2450e449-eeab-4b2c-8461-cba29efb3ab9" />
+
+
 
 ## 2. SUBTRACTION
 
@@ -83,6 +86,25 @@ END
 
 
 #### Program
+```asm
+CODE SEGMENT
+ASSUME CS: CODE, DS: CODE
+ORG 1000H
+MOV SI,2000H
+MOV CL,00H
+MOV AX,[SI]
+MOV BX,[SI+02H]
+SUB AX,BX
+JNC L1
+INC CL
+L1:
+MOV [SI+04H],AX
+MOV [SI+06H],CL
+MOV AH,4CH
+INT 21H
+CODE ENDS
+END
+```
 
 
 
@@ -100,6 +122,11 @@ END
 
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
+<img width="639" height="405" alt="image" src="https://github.com/user-attachments/assets/370d36cb-365f-47de-931b-0530cef00a10" />
+
+<img width="645" height="401" alt="image" src="https://github.com/user-attachments/assets/3f4eee22-44c6-4030-aa94-669e7a963d3a" />
+
+
 
 ## 3. MULTIPLICATION
 
@@ -148,6 +175,9 @@ END
 ---
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
+<img width="640" height="398" alt="image" src="https://github.com/user-attachments/assets/6ceef8a5-c501-498a-a5af-446cbd83c715" />
+<img width="643" height="397" alt="image" src="https://github.com/user-attachments/assets/667bf4d6-8b48-4a3b-9739-31df514d02ba" />
+
 
 ## 4. DIVISION
 
@@ -192,6 +222,9 @@ END
 
 ---
 ## OUTPUT FROM MASM SOFTWARE
+<img width="637" height="402" alt="image" src="https://github.com/user-attachments/assets/aeff884b-0600-4aa5-81bc-ebccc3d86b0d" />
+
+<img width="637" height="373" alt="image" src="https://github.com/user-attachments/assets/a15e4bb2-2ea2-4080-bb31-93886d0e7ac1" />
 
 
 
