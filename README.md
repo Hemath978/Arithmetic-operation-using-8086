@@ -1,39 +1,23 @@
-# Arithmetic-operation-using-8086
-# 8086 Assembly Language Programs for Arithmetic Operations
-
-## AIM
-
+Arithmetic-operation-using-8086
+8086 Assembly Language Programs for Arithmetic Operations
+AIM
 To write and execute Assembly Language Programs to perform arithmetic operations for the 8086 microprocessor.
 
----
-
-## APPARATUS REQUIRED
-
-* Personal Computer with MASM Software
-
----
-
-## 1. ADDITION
-
-#### Algorithm
-
-1. Initialize memory location in HL register.
-2. Store 1st data.
-3. Increment HL to enter 2nd data.
-4. Move 2nd number to accumulator.
-5. Decrement HL.
-6. Add value in memory with accumulator.
-7. Store result.
-8. Stop.
-
-
-## FLOW CHART
-<img width="707" height="1024" alt="image" src="https://github.com/user-attachments/assets/b5a7062d-e294-47cd-9683-a40de25e82de" />
-
-
-#### Program
-
-```asm
+APPARATUS REQUIRED
+Personal Computer with MASM Software
+1. ADDITION
+Algorithm
+Initialize memory location in HL register.
+Store 1st data.
+Increment HL to enter 2nd data.
+Move 2nd number to accumulator.
+Decrement HL.
+Add value in memory with accumulator.
+Store result.
+Stop.
+FLOW CHART
+image
+Program
 CODE SEGMENT
 ASSUME CS: CODE, DS: CODE
 ORG 1000H
@@ -51,74 +35,40 @@ MOV AH,4CH
 INT 21H
 CODE ENDS
 END
-```
+Output Table
+MEMORY LOCATION (INPUT)	MEMORY LOCATION (OUTPUT)
+WhatsApp Image 2025-09-01 at 23 28 25_1cb910c3	WhatsApp Image 2025-09-01 at 23 28 25_b811ca90
+Manual Calculations
+WhatsApp Image 2025-09-01 at 22 35 15_70a9b978
 
-#### Output Table
+OUTPUT IMAGE FROM MASM SOFTWARE
+2. SUBTRACTION
+Algorithm
+Initialize memory and store 1st data.
+Increment to get 2nd data.
+Move 2nd data to accumulator.
+Subtract memory content.
+Store result.
+FLOWCHART
+image
+Program
+Output Table
+MEMORY LOCATION (INPUT)	MEMORY LOCATION (OUTPUT)
+WhatsApp Image 2025-09-01 at 23 19 14_da5e48fa	WhatsApp Image 2025-09-01 at 23 19 15_127aacd9
+Manual Calculations
+WhatsApp Image 2025-09-01 at 22 35 16_361f713d
 
-| MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
-| ----------------------- | ------------------------ |
-|                         |                          |
-
-#### Manual Calculations
-
-(Add your calculation here)
-
----
-
-## OUTPUT IMAGE FROM MASM SOFTWARE
-
-## 2. SUBTRACTION
-
-#### Algorithm
-
-1. Initialize memory and store 1st data.
-2. Increment to get 2nd data.
-3. Move 2nd data to accumulator.
-4. Subtract memory content.
-5. Store result.
-
-## FLOWCHART
-
-<img width="578" height="797" alt="image" src="https://github.com/user-attachments/assets/564c3c7a-33ce-4a1c-8920-beb5c24b9b47" />
-
-
-#### Program
-
-
-
-#### Output Table
-
-| MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
-| ----------------------- | ------------------------ |
-|                         |                          |
-
-#### Manual Calculations
-
-(Add your calculation here)
-
----
-
-
-## OUTPUT SCREEN FROM MASM SOFTWARE
-
-## 3. MULTIPLICATION
-
-#### Algorithm
-
-1. Initialize memory and store operands.
-2. Move operands to registers.
-3. Multiply.
-4. Store result.
-
+OUTPUT SCREEN FROM MASM SOFTWARE
+3. MULTIPLICATION
+Algorithm
+Initialize memory and store operands.
+Move operands to registers.
+Multiply.
+Store result.
 ##FLOWCHART
 
-<img width="569" height="906" alt="image" src="https://github.com/user-attachments/assets/88be88ff-2896-4a88-b73d-84ccffd2fcf9" />
-
-
-
-#### Program
-
-```asm
+image
+Program
 CODE SEGMENT
 ASSUME CS: CODE, DS: CODE
 ORG 1000H
@@ -133,37 +83,24 @@ MOV AH,4CH
 INT 21H
 CODE ENDS
 END
-```
+Output Table
+MEMORY LOCATION (INPUT)	MEMORY LOCATION (OUTPUT)
+WhatsApp Image 2025-09-01 at 23 28 11_2349f85b	WhatsApp Image 2025-09-01 at 23 28 11_2752ddff
+Manual Calculations
+WhatsApp Image 2025-09-01 at 22 35 16_117c9fb4
 
-#### Output Table
+OUTPUT SCREEN FROM MASM SOFTWARE
+4. DIVISION
+Algorithm
+Load memory location of operands.
 
-| MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
-| ----------------------- | ------------------------ |
-|                         |                          |
+Perform division.
 
-#### Manual Calculations
+Store result.
 
-(Add your calculation here)
-
----
-
-## OUTPUT SCREEN FROM MASM SOFTWARE
-
-## 4. DIVISION
-
-#### Algorithm
-
-1. Load memory location of operands.
-2. Perform division.
-3. Store result.
-
-   ## FLOWCHART
-<img width="1065" height="802" alt="image" src="https://github.com/user-attachments/assets/25b4a483-0d42-494b-8639-1af3ea17191b" />
-
-
-#### Program
-
-```asm
+FLOWCHART
+image
+Program
 CODE SEGMENT
 ASSUME CS: CODE, DS: CODE
 ORG 1000H
@@ -178,23 +115,12 @@ MOV AH,4CH
 INT 21H
 CODE ENDS
 END
-```
+Output Table
+MEMORY LOCATION (INPUT)	MEMORY LOCATION (OUTPUT)
+WhatsApp Image 2025-09-01 at 23 21 10_1662fa82	WhatsApp Image 2025-09-01 at 23 21 11_37a19459
+Manual Calculations
+WhatsApp Image 2025-09-01 at 22 35 15_99659ffa
 
-#### Output Table
-
-| MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
-| ----------------------- | ------------------------ |
-|                         |                          |
-
-#### Manual Calculations
-
-(Add your calculation here)
-
----
-## OUTPUT FROM MASM SOFTWARE
-
-
-
-## RESULT
-
+OUTPUT FROM MASM SOFTWARE
+RESULT
 Thus, the Assembly Language Programs for 8086 to perform arithmetic operations (Addition, Subtraction, Multiplication, and Division) using both direct and indirect methods were successfully written and executed using MASM.
