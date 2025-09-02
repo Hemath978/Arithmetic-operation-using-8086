@@ -57,11 +57,11 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
+|           ![WhatsApp Image 2025-09-01 at 23 28 25_1cb910c3](https://github.com/user-attachments/assets/40ea9aad-b172-4f5f-b62d-b5ffc5985c8b)|            ![WhatsApp Image 2025-09-01 at 23 28 25_b811ca90](https://github.com/user-attachments/assets/83b6d161-1a61-45e0-89c1-f5d2fbc6e440)|
 
 #### Manual Calculations
 
-(Add your calculation here)
+![WhatsApp Image 2025-09-01 at 22 35 15_70a9b978](https://github.com/user-attachments/assets/277652bf-f648-4af6-91db-095e5d7475f9)
 
 ---
 
@@ -90,11 +90,11 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
+|            ![WhatsApp Image 2025-09-01 at 23 19 14_da5e48fa](https://github.com/user-attachments/assets/79244b30-6c5e-4aa7-a0d8-05b6f48ebd41)|           ![WhatsApp Image 2025-09-01 at 23 19 15_127aacd9](https://github.com/user-attachments/assets/1939fe81-6248-4773-aad8-2cbe76279183)|
 
 #### Manual Calculations
 
-(Add your calculation here)
+![WhatsApp Image 2025-09-01 at 22 35 16_361f713d](https://github.com/user-attachments/assets/975d9528-2646-462f-9687-76ea0558823f)
 
 ---
 
@@ -139,11 +139,11 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
+|            ![WhatsApp Image 2025-09-01 at 23 28 11_2349f85b](https://github.com/user-attachments/assets/84e75e45-2e14-47a6-80b1-76d14cbdc902)|           ![WhatsApp Image 2025-09-01 at 23 28 11_2752ddff](https://github.com/user-attachments/assets/8edbf192-ed5e-4af7-af5d-85c5e3d50f31)|
 
 #### Manual Calculations
 
-(Add your calculation here)
+![WhatsApp Image 2025-09-01 at 22 35 16_117c9fb4](https://github.com/user-attachments/assets/9919768c-1c0f-4546-afdb-36d87c88b87f)
 
 ---
 
@@ -184,17 +184,14 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
+|      ![WhatsApp Image 2025-09-01 at 23 21 10_1662fa82](https://github.com/user-attachments/assets/e345ee17-1857-4406-bfd6-89af3a4366fd)| ![WhatsApp Image 2025-09-01 at 23 21 11_37a19459](https://github.com/user-attachments/assets/313c49b3-6079-4ad1-8cdc-b2ef082f092b)|
 
 #### Manual Calculations
 
-(Add your calculation here)
+![WhatsApp Image 2025-09-01 at 22 35 15_99659ffa](https://github.com/user-attachments/assets/3ab1c66f-3bac-45a6-9ce4-56d3a06619fd)
 
 ---
 ## OUTPUT FROM MASM SOFTWARE
-
-
-
 ## RESULT
 
 Thus, the Assembly Language Programs for 8086 to perform arithmetic operations (Addition, Subtraction, Multiplication, and Division) using both direct and indirect methods were successfully written and executed using MASM.
