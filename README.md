@@ -1,129 +1,5 @@
-Arithmetic-operation-using-8086
-8086 Assembly Language Programs for Arithmetic Operations
-AIM
-To write and execute Assembly Language Programs to perform arithmetic operations for the 8086 microprocessor.
-
-APPARATUS REQUIRED
-Personal Computer with MASM Software
-1. ADDITION
-Algorithm
-Initialize memory location in HL register.
-Store 1st data.
-Increment HL to enter 2nd data.
-Move 2nd number to accumulator.
-Decrement HL.
-Add value in memory with accumulator.
-Store result.
-Stop.
-FLOW CHART
-image
-Program
-CODE SEGMENT
-ASSUME CS: CODE, DS: CODE
-ORG 1000H
-MOV SI,2000H
-MOV CL,00H
-MOV AX,[SI]
-MOV BX,[SI+02H]
-ADD AX,BX
-JNC L1
-INC CL
-L1:
-MOV [SI+04H],AX
-MOV [SI+06H],CL
-MOV AH,4CH
-INT 21H
-CODE ENDS
-END
-Output Table
-MEMORY LOCATION (INPUT)	MEMORY LOCATION (OUTPUT)
-WhatsApp Image 2025-09-01 at 23 28 25_1cb910c3	WhatsApp Image 2025-09-01 at 23 28 25_b811ca90
-Manual Calculations
-WhatsApp Image 2025-09-01 at 22 35 15_70a9b978
-
-OUTPUT IMAGE FROM MASM SOFTWARE
-2. SUBTRACTION
-Algorithm
-Initialize memory and store 1st data.
-Increment to get 2nd data.
-Move 2nd data to accumulator.
-Subtract memory content.
-Store result.
-FLOWCHART
-image
-Program
-Output Table
-MEMORY LOCATION (INPUT)	MEMORY LOCATION (OUTPUT)
-WhatsApp Image 2025-09-01 at 23 19 14_da5e48fa	WhatsApp Image 2025-09-01 at 23 19 15_127aacd9
-Manual Calculations
-WhatsApp Image 2025-09-01 at 22 35 16_361f713d
-
-OUTPUT SCREEN FROM MASM SOFTWARE
-3. MULTIPLICATION
-Algorithm
-Initialize memory and store operands.
-Move operands to registers.
-Multiply.
-Store result.
-##FLOWCHART
-
-image
-Program
-CODE SEGMENT
-ASSUME CS: CODE, DS: CODE
-ORG 1000H
-MOV SI,2000H
-MOV DX,0000H
-MOV AX,[SI]
-MOV BX,[SI+02H]
-MUL BX
-MOV [SI+04H],AX
-MOV [SI+06H],DX
-MOV AH,4CH
-INT 21H
-CODE ENDS
-END
-Output Table
-MEMORY LOCATION (INPUT)	MEMORY LOCATION (OUTPUT)
-WhatsApp Image 2025-09-01 at 23 28 11_2349f85b	WhatsApp Image 2025-09-01 at 23 28 11_2752ddff
-Manual Calculations
-WhatsApp Image 2025-09-01 at 22 35 16_117c9fb4
-
-OUTPUT SCREEN FROM MASM SOFTWARE
-4. DIVISION
-Algorithm
-Load memory location of operands.
-
-Perform division.
-
-Store result.
-
-FLOWCHART
-image
-Program
-CODE SEGMENT
-ASSUME CS: CODE, DS: CODE
-ORG 1000H
-MOV SI,2000H
-MOV DX,0000H
-MOV AX,[SI]
-MOV BX,[SI+02H]
-DIV BX
-MOV [SI+04H],AX
-MOV [SI+06H],DX
-MOV AH,4CH
-INT 21H
-CODE ENDS
-END
-Output Table
-MEMORY LOCATION (INPUT)	MEMORY LOCATION (OUTPUT)
-WhatsApp Image 2025-09-01 at 23 21 10_1662fa82	WhatsApp Image 2025-09-01 at 23 21 11_37a19459
-Manual Calculations
-WhatsApp Image 2025-09-01 at 22 35 15_99659ffa
-
-OUTPUT FROM MASM SOFTWARE
-RESULT
-Thus, the Assembly Language Programs for 8086 to perform arithmetic operations (Addition, Subtraction, Multiplication, and Division) using both direct and indirect methods were successfully written and executed using MASM.bly Language Programs for Arithmetic Operations
+# Arithmetic-operation-using-8086
+# 8086 Assembly Language Programs for Arithmetic Operations
 
 ## AIM
 
@@ -181,19 +57,15 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
+|           ![WhatsApp Image 2025-09-01 at 23 28 25_1cb910c3](https://github.com/user-attachments/assets/40ea9aad-b172-4f5f-b62d-b5ffc5985c8b)|            ![WhatsApp Image 2025-09-01 at 23 28 25_b811ca90](https://github.com/user-attachments/assets/83b6d161-1a61-45e0-89c1-f5d2fbc6e440)|
 
 #### Manual Calculations
 
-(Add your calculation here)
+![WhatsApp Image 2025-09-01 at 22 35 15_70a9b978](https://github.com/user-attachments/assets/277652bf-f648-4af6-91db-095e5d7475f9)
 
 ---
 
 ## OUTPUT IMAGE FROM MASM SOFTWARE
-<img width="640" height="401" alt="image" src="https://github.com/user-attachments/assets/898b3d94-3ff8-4370-b73f-2ed871766f04" />
-<img width="641" height="400" alt="image" src="https://github.com/user-attachments/assets/2450e449-eeab-4b2c-8461-cba29efb3ab9" />
-
-
 
 ## 2. SUBTRACTION
 
@@ -211,25 +83,6 @@ END
 
 
 #### Program
-```asm
-CODE SEGMENT
-ASSUME CS: CODE, DS: CODE
-ORG 1000H
-MOV SI,2000H
-MOV CL,00H
-MOV AX,[SI]
-MOV BX,[SI+02H]
-SUB AX,BX
-JNC L1
-INC CL
-L1:
-MOV [SI+04H],AX
-MOV [SI+06H],CL
-MOV AH,4CH
-INT 21H
-CODE ENDS
-END
-```
 
 
 
@@ -237,21 +90,16 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
+|            ![WhatsApp Image 2025-09-01 at 23 19 14_da5e48fa](https://github.com/user-attachments/assets/79244b30-6c5e-4aa7-a0d8-05b6f48ebd41)|           ![WhatsApp Image 2025-09-01 at 23 19 15_127aacd9](https://github.com/user-attachments/assets/1939fe81-6248-4773-aad8-2cbe76279183)|
 
 #### Manual Calculations
 
-(Add your calculation here)
+![WhatsApp Image 2025-09-01 at 22 35 16_361f713d](https://github.com/user-attachments/assets/975d9528-2646-462f-9687-76ea0558823f)
 
 ---
 
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
-<img width="639" height="405" alt="image" src="https://github.com/user-attachments/assets/370d36cb-365f-47de-931b-0530cef00a10" />
-
-<img width="645" height="401" alt="image" src="https://github.com/user-attachments/assets/3f4eee22-44c6-4030-aa94-669e7a963d3a" />
-
-
 
 ## 3. MULTIPLICATION
 
@@ -291,18 +139,15 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
+|            ![WhatsApp Image 2025-09-01 at 23 28 11_2349f85b](https://github.com/user-attachments/assets/84e75e45-2e14-47a6-80b1-76d14cbdc902)|           ![WhatsApp Image 2025-09-01 at 23 28 11_2752ddff](https://github.com/user-attachments/assets/8edbf192-ed5e-4af7-af5d-85c5e3d50f31)|
 
 #### Manual Calculations
 
-(Add your calculation here)
+![WhatsApp Image 2025-09-01 at 22 35 16_117c9fb4](https://github.com/user-attachments/assets/9919768c-1c0f-4546-afdb-36d87c88b87f)
 
 ---
 
 ## OUTPUT SCREEN FROM MASM SOFTWARE
-<img width="640" height="398" alt="image" src="https://github.com/user-attachments/assets/6ceef8a5-c501-498a-a5af-446cbd83c715" />
-<img width="643" height="397" alt="image" src="https://github.com/user-attachments/assets/667bf4d6-8b48-4a3b-9739-31df514d02ba" />
-
 
 ## 4. DIVISION
 
@@ -339,20 +184,14 @@ END
 
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
-|                         |                          |
+|      ![WhatsApp Image 2025-09-01 at 23 21 10_1662fa82](https://github.com/user-attachments/assets/e345ee17-1857-4406-bfd6-89af3a4366fd)| ![WhatsApp Image 2025-09-01 at 23 21 11_37a19459](https://github.com/user-attachments/assets/313c49b3-6079-4ad1-8cdc-b2ef082f092b)|
 
 #### Manual Calculations
 
-(Add your calculation here)
+![WhatsApp Image 2025-09-01 at 22 35 15_99659ffa](https://github.com/user-attachments/assets/3ab1c66f-3bac-45a6-9ce4-56d3a06619fd)
 
 ---
 ## OUTPUT FROM MASM SOFTWARE
-<img width="637" height="402" alt="image" src="https://github.com/user-attachments/assets/aeff884b-0600-4aa5-81bc-ebccc3d86b0d" />
-
-<img width="637" height="373" alt="image" src="https://github.com/user-attachments/assets/a15e4bb2-2ea2-4080-bb31-93886d0e7ac1" />
-
-
-
 ## RESULT
 
 Thus, the Assembly Language Programs for 8086 to perform arithmetic operations (Addition, Subtraction, Multiplication, and Division) using both direct and indirect methods were successfully written and executed using MASM.
